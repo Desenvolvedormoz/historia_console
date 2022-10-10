@@ -1,10 +1,17 @@
 import React from "react"; 
-import { ScrollView, Text } from 'react-native';
+import { ScrollView } from 'react-native';
+import Historia from "./historia";
+import Especificacoes from "./especificacoes";
+import Jogo from "./jogo";
+import Conclusao from "./conclusao";
 
 export default function TelaXbox (){
     return(
         <ScrollView>
-          <Text>Tela xbox</Text>
+          <Historia />
+          <Especificacoes />
+          <Jogo />
+          <Conclusao />
         </ScrollView>
     )
 };

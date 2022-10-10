@@ -1,10 +1,17 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { ScrollView } from "react-native";
+import Jogo from "./Jogo";
+import Especificacoes from "./Especificacoes";
+import Historia from "./Historia";
+import Conclusao from "./Conclusao";
 
 export default function TelaPlayStation(){
     return(
-        <View>
-            <Text>Play Station</Text>
-        </View>
+        <ScrollView>
+            <Historia />
+            <Especificacoes />
+            <Jogo />
+            <Conclusao />
+        </ScrollView>
     )
 };
