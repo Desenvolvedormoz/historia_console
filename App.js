@@ -10,7 +10,23 @@ const Tabs = createBottomTabNavigator()
 export default function App() {
   return (
    <NavigationContainer>
-    <Tabs.Navigator>
+    <Tabs.Navigator screenOptions={{
+      headerStyle:{
+        backgroundColor:'#a70c40ee',
+      },
+      headerTitleAlign: 'center',
+
+      headerTintColor: '#fff',
+
+      tabBarActiveBackgroundColor: 'green',
+      tabBarActiveTintColor: 'rgb(7,66,208)',
+      tabBarStyle: {
+        backgroundColor: '#a70c40ee',
+      },
+      tabBarInactiveTintColor: '#fff'
+      
+
+    }}>
       <Tabs.Screen name='Xbox' component={TelaXbox}
       options={{
         tabBarIcon: ({color})=>(
