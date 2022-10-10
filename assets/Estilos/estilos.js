@@ -23,16 +23,60 @@ const estilos = StyleSheet.create({
     },
     
     containerPai: {
-        flexDirection: 'row',
-        justifyContent: "center",
-        alignItems: 'center',
-        width: "100%",
-        marginBottom: 20
+       flexDirection: 'row',
+       justifyContent: 'space-between',
+       flexWrap: 'wrap',
     },
 
     containerFilho: {
-        width: 100,
-        height: 100,
+        minWidth: 150,
+        backgroundColor: 'rgb(0,128,64)',
+        marginBottom: 10,
+        alignItems: 'center',
+        paddingVertical: 20,
+        paddingHorizontal: 10,
+        flex: 1,
+        borderWidth: 1,
+        borderColor: '#939393',
+        borderRadius: 5,
+        marginHorizontal: 10
+    },
+
+    imageIcon: {
+        width: 60,
+        height: 60,
+        marginBottom: 5
+    },
+    cardTexto: {
+        textAlign: 'center',
+        textTransform:'uppercase',
+        lineHeight: 20
+    },
+    containerVermelho: {
+        minWidth: 150,
+        backgroundColor: '#a70c40ee',
+        marginBottom: 10,
+        alignItems: 'center',
+        paddingVertical: 20,
+        paddingHorizontal: 10,
+        flex: 1,
+        borderWidth: 1,
+        borderColor: '#939393',
+        borderRadius: 5,
+        marginHorizontal: 10
+    },
+    containerPlayStation: {
+        minWidth: 150,
+        backgroundColor: 'rgb(7,66,208)',
+        marginBottom: 10,
+        alignItems: 'center',
+        paddingVertical: 20,
+        paddingHorizontal: 10,
+        flex: 1,
+        borderWidth: 1,
+        borderColor: '#939393',
+        borderRadius: 5,
+        marginHorizontal: 10
     }
 })
 export default estilos;
